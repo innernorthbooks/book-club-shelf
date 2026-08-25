@@ -550,7 +550,7 @@
     <div class="section-header">
       <div>
         <h2>Share a Book</h2>
-        <div class="section-sub">A running log of what we've discussed</div>
+        <div class="section-sub">A running log of books we've talked about at meetups</div>
       </div>
     </div>
 
@@ -570,13 +570,15 @@
         <button class="clear-btn" id="clearSelection">clear</button>
       </div>
 
-      <label class="field-label" for="comment">What did you think?</label>
+      <label class="field-label" for="sharedBy">Added by</label>
+      <input type="text" id="sharedBy" placeholder="Your name" autocomplete="off">
+      
+      <label class="field-label" for="comment">The chat</label>
       <textarea id="comment" placeholder="A line or two about the book, the discussion, whatever's worth remembering…"></textarea>
 
-      <label class="field-label" for="sharedBy">Shared by</label>
-      <input type="text" id="sharedBy" placeholder="Your name" autocomplete="off">
 
-      <button class="submit-btn" id="submitBtn">Add to the shelf</button>
+
+      <button class="submit-btn" id="submitBtn">Add to the shelf chat</button>
       <div class="form-msg" id="formMsg"></div>
     </div>
 
@@ -594,12 +596,12 @@
   <!-- ===================== SCHEDULE VIEW ===================== -->
   <div class="view" id="scheduleView">
 
-    <button class="back-link" id="backToHome">&larr; Back to the shelf</button>
+    <button class="back-link" id="backToHome">&larr; Back to the shelf chat</button>
 
     <div class="section-header">
       <div>
         <h2>Reading Schedule</h2>
-        <div class="section-sub">Books assigned for past and upcoming meetups</div>
+        <div class="section-sub">Books we've chosen for past and upcoming meetups</div>
       </div>
     </div>
 
