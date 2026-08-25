@@ -1,0 +1,12 @@
+# Firebase local configuration
+.firebase/
+.firebaserc
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node (if you later add a build step)
+node_modules/
