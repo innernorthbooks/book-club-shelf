@@ -711,7 +711,7 @@
       <label class="field-label" for="pickMonth">When are we reading it?</label>
       <input type="month" id="pickMonth">
 
-      <label class="field-label" for="pickedBy">Chosen by</label>
+      <label class="field-label" for="pickedBy">Chosen by (optional)</label>
       <input type="text" id="pickedBy" placeholder="Your name" autocomplete="off">
 
       <label class="field-label" for="pickNote">Note (optional)</label>
@@ -1203,7 +1203,7 @@
     if(!book){showPickMsg('Search for a book and pick it from the list first.');return;}
     const monthValue=pickMonthEl.value;
     if(!monthValue){showPickMsg('Add the month you expect to read it.');return;}
-    const pickedBy=pickedByEl.value.trim(); if(!pickedBy){showPickMsg('Add who picked this book.');return;}
+    const pickedBy=pickedByEl.value.trim();
     if(!db){showPickMsg('Firebase is not connected yet.');return;}
     if(pickedBy.length>80 || pickNoteEl.value.length>1000){showPickMsg('Please keep the name and note a little shorter.');return;}
     pickSubmitBtn.disabled=true;pickSubmitBtn.textContent='Adding…';
